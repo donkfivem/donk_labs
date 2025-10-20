@@ -87,36 +87,51 @@ A comprehensive key-based lab system for FiveM, supporting both **QBCore** and *
 }
 ```
 
-### ESX (es_extended or your inventory/database)
+### ESX with ox_inventory (ox_inventory/data/items.lua)
 ```lua
--- Add to your items table or items.lua
-{
-    name = 'gunkey',
+-- Add to your items.lua
+['gunkey'] = {
     label = 'Gun Bunker Key',
-    weight = 0,
-    rare = false,
-    canRemove = true
+    weight = 1,
+    stack = false,
+    close = true,
+    description = 'Gun Bunker Access Key',
+    client = {
+        image = 'gunkey.png',
+    }
 },
-{
-    name = 'gunkey3',
+
+['gunkey3'] = {
     label = 'New Gun Bunker Key',
-    weight = 0,
-    rare = false,
-    canRemove = true
+    weight = 1,
+    stack = false,
+    close = true,
+    description = 'New Gun Bunker Access Key',
+    client = {
+        image = 'gunkey.png',
+    }
 },
-{
-    name = 'lsdlabkeycard',
+
+['lsdlabkeycard'] = {
     label = 'LSD Lab Keycard',
-    weight = 0,
-    rare = false,
-    canRemove = true
+    weight = 1,
+    stack = false,
+    close = true,
+    description = 'LSD Lab Access Keycard',
+    client = {
+        image = 'labkey.png',
+    }
 },
-{
-    name = 'cokelabkeycard',
+
+['cokelabkeycard'] = {
     label = 'Coke Lab Keycard',
-    weight = 0,
-    rare = false,
-    canRemove = true
+    weight = 1,
+    stack = false,
+    close = true,
+    description = 'Coke Lab Access Keycard',
+    client = {
+        image = 'labkey.png',
+    }
 }
 ```
 
