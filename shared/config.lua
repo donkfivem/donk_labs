@@ -1,5 +1,15 @@
 Config = {}
 
+-- Framework Settings
+Config.Framework = 'auto' -- 'auto', 'qb', or 'esx' - auto will detect automatically
+Config.TargetSystem = 'auto' -- 'auto', 'qb-target', or 'ox_target' - auto will detect automatically
+
+-- Menu System (only used for QBCore)
+Config.Menu = 'qb-menu' -- 'qb-menu' or 'ox_lib' (ox_lib context menu)
+
+-- Notification System
+Config.Notification = 'framework' -- 'framework' uses framework default, or 'ox_lib', 'okokNotify', 'mythic_notify'
+
 Locales = {} -- Interaction locales
 
 Config.Labs = {

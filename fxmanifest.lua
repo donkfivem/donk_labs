@@ -6,16 +6,18 @@ game 'gta5'
 lua54 'yes'
 
 author 'donk'
-description 'Keybased labs for QBCore'
-version '1.0'
+description 'Keybased labs for QBCore & ESX with qb-target & ox_target support'
+version '2.0.0'
+
+shared_scripts {
+    '@ox_lib/init.lua',
+    'shared/config.lua',
+    'shared/framework.lua',
+    'shared/target.lua'
+}
 
 client_scripts {
     'client/cl_main.lua'
-}
-
-shared_script {
-    'shared/config.lua',
-    '@ox_lib/init.lua',
 }
 
 server_scripts {
